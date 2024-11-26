@@ -1,0 +1,47 @@
+{
+  "name": "@devium/ky",
+  "version": "1.8.1",
+  "description": "UMD version of the ky",
+  "homepage": "https://github.com/vanodevium/ky#readme",
+  "bugs": {
+    "url": "https://github.com/vanodevium/ky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanodevium/ky.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Vano Devium",
+    "email": "vano@devium.me",
+    "url": "https://devium.me/"
+  },
+  "type": "module",
+  "main": "dist/umd.min.js",
+  "unpkg": "dist/umd.min.js",
+  "module": "umd.js",
+  "files": [
+    "dist/umd.js",
+    "dist/umd.min.js",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "fix": "biome check --write"
+  },
+  "dependencies": {
+    "ky": "1.8.1",
+    "read-pkg": "9.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "16.0.1",
+    "esbuild": "0.25.5",
+    "load-json-file": "7.0.1",
+    "rimraf": "6.0.1",
+    "rollup": "4.44.1",
+    "rollup-plugin-esbuild": "6.2.1",
+    "write-json-file": "6.0.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "@devium/ky@1.8.1"
+}
